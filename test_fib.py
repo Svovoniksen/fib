@@ -15,7 +15,7 @@ class TestfFbApp(AsyncHTTPTestCase):
         response = self.fetch('/')
         msg = 'homepage fail'
         self.assertEqual(response.code, 200, msg)
-        self.assertEqual(response.body, b'Go to "/your_number" for example: <a href="/100">link</a>', msg)
+        self.assertEqual(response.body, b'Goto "/your_number" for example: <a href="/100">link</a>', msg)
 
     def test_fib_calculation(self):
         for n, v in self.fibs.items():
