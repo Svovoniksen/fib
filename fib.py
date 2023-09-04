@@ -14,7 +14,7 @@ def get_fib(n):
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write('Go to "/your_number" for example: <a href="/100">link</a>')
+        self.write('Go to "/your_number" for example: <a href="/1000">link</a>')
 
 class NumberHandler(tornado.web.RequestHandler):
     def get(self, number):
@@ -28,7 +28,7 @@ def make_app():
 
 async def main():
     app = make_app()
-    app.listen(8888)
+    app.listen(8898)
     await asyncio.Event().wait()
 
 if __name__ == "__main__":
