@@ -1,1 +1,1 @@
-# fib
+# fib is a program to compute n-th member of fibonacci sequence
